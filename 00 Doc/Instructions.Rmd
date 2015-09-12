@@ -1,0 +1,10 @@
+---
+title: "Instructions"
+author: "Nathan R"
+date: "September 12, 2015"
+output: html_document
+---
+
+This is our group's history. We have a lot to be proud of. We went on a camping trip. Here's the picture.
+
+![](./Camping Trip.png)
