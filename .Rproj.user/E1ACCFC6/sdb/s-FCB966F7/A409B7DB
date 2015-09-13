@@ -1,0 +1,17 @@
+{
+    "contents" : "---\ntitle: \"Instructions\"\nauthor: \"Nathan R\"\ndate: \"September 12, 2015\"\noutput: html_document\n---\n\nThis is our group's history. We have a lot to be proud of. We went on a camping trip. Here's the picture.\n\n![](./Camping Trip.png)\n",
+    "created" : 1442101216374.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1365569049",
+    "id" : "A409B7DB",
+    "lastKnownWriteTime" : 1442114785,
+    "path" : "~/DataVisualization/DV_RProject1/00 Doc/Instructions.Rmd",
+    "project_path" : "00 Doc/Instructions.Rmd",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "type" : "r_markdown"
+}

@@ -1,0 +1,17 @@
+{
+    "contents" : "require(\"jsonlite\")\nrequire(\"RCurl\")\n# Change the USER and PASS below to be your UTEid\ndf <- data.frame(fromJSON(getURL(URLencode('129.152.144.84:5001/rest/native/?query=\"select * from titanic where sex is not null\"'),httpheader=c(DB='jdbc:oracle:thin:@129.152.144.84:1521/PDBF15DV.usuniversi01134.oraclecloud.internal', USER='cs329e_ctm686', PASS='orcl_ctm686', MODE='native_mode', MODEL='model', returnDimensions = 'False', returnFor = 'JSON'), verbose = TRUE), ))\ndf\nsummary(df)\nhead(df)\nrequire(ggplot2)\nrequire(extrafont)\nggplot() + \n  coord_cartesian() + \n  scale_x_discrete() +\n  scale_y_continuous() +\n  #facet_wrap(~SURVIVED) +\n  #facet_grid(.~SURVIVED, labeller=label_both) + # Same as facet_wrap but with a label.\n  #facet_grid(PCLASS~SURVIVED, labeller=label_both) +\n  labs(title='Titanic') +\n  labs(x=\"SURVIVED\", y=paste(\"Fare\")) +\n  layer(data=df, \n        mapping=aes(x=SEX, y=as.numeric(as.character(FARE)), color=as.character(SURVIVED)), \n        stat=\"identity\", \n        stat_params=list(), \n        geom=\"point\",\n        geom_params=list(), \n        #position=position_identity()\n        position=position_jitter(width=0.3, height=0)\n  )\n\nggplot() + \n  coord_cartesian() + \n  scale_x_discrete() +\n  scale_y_continuous() +\n  facet_grid(PCLASS~SURVIVED, labeller=label_both) +\n  labs(title='Titanic') +\n  labs(x=\"SURVIVED\", y=paste(\"FARE\")) +\n  layer(data=df, \n        mapping=aes(x=SEX, y=as.numeric(as.character(FARE)), color=SEX), \n        stat=\"identity\", \n        stat_params=list(), \n        geom=\"point\",\n        geom_params=list(), \n        #position=position_identity()\n        position=position_jitter(width=0.3, height=0)\n  )",
+    "created" : 1442102295380.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4098721117",
+    "id" : "DB9D65CB",
+    "lastKnownWriteTime" : 1442102255,
+    "path" : "~/DataVisualization/DV_RProject1/01 Data/Titanic Analysis.R",
+    "project_path" : "01 Data/Titanic Analysis.R",
+    "properties" : {
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
