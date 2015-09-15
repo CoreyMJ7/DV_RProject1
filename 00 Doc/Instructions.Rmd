@@ -1,15 +1,28 @@
 ---
 title: "Instructions"
-author: "Nathan R"
+author: "Nathan Riojas, Corey Monreal-Jackson, Ryan Billa"
 date: "September 12, 2015"
 output: html_document
+
 ---
+
+
+#### Steps used to create this project
+#####1.Using GitHub, create a Repo
+#####2. Clone the Repository into the Data Visualization Folder
+#####3. Create a R Studio Folder for all the project development and get data from oracle database within the data folder
+
+#####00 Doc: Holds the .Rmd and .html files containing these instructions and project output
+
+#####01 Data: Gathers the data from the database for and puts it into data frames
+
+#####02 Visualization: Contains the .R files that use ggplot2 to generate graph our graphs
+
+#####The .R file is called using the command below. The subsequent code/graphs illustrates the code that goes into
 
 
 ```{r}
 source("../01 Data/Titanic Analysis.R", echo = TRUE)
-```
+source("../02 Visualizations/Visualizations w ggplot.R", echo = TRUE)
+```{r}
 
-This is our group's history. We have a lot to be proud of. We went on a camping trip. Here's the picture.
-
-![](./Camping Trip.png)
