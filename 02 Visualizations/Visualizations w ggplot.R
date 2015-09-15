@@ -118,7 +118,7 @@ ggplot() +
   #facet_wrap(~SURVIVED) +
   #facet_grid(.~SURVIVED, labeller=label_both) + # Same as facet_wrap but with a label.
   facet_grid(SURVIVED~EMBARKED, labeller=label_both) +
-  labs(title='Titanic where age >= 40') +
+  labs(title='Titanic where age >= 40: Age vs Sex By Embarked & Survival') +
   labs(x="SEX", y=paste("AGE")) +
   layer(data=df4, 
         mapping=aes(x=SEX, y=as.numeric(as.character(AGE)), color=SEX), 
