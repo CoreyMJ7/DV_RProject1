@@ -5,6 +5,11 @@ date: "September 12, 2015"
 output: html_document
 ---
 
+
+```{r}
+source("../01 Data/Titanic Analysis.R", echo = TRUE)
+```
+
 This is our group's history. We have a lot to be proud of. We went on a camping trip. Here's the picture.
 
 ![](./Camping Trip.png)
