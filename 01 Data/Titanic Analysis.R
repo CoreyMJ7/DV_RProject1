@@ -13,7 +13,6 @@ df4 <- data.frame(fromJSON(getURL(URLencode('129.152.144.84:5001/rest/native/?qu
 
 
 summary(df)
-#head(df)
-subset(df,cabin = 'C125')
+head(df)
 
 

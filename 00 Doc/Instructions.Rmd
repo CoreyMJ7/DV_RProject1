@@ -12,15 +12,15 @@ output: html_document
 #####2. Clone the Repository into the Data Visualization Folder (Or the folder you wish)
 #####3. Create R Studio Folders for all the project development (folder descriptions below)
 #####4. Using Oracle SQL Developer paste the titanic data set into the database's worksheet
-#####5. Use a query statement in the  TitanicAnalysis.R file (in data folder) to build one or more data frame with the titanic data from the Oracle     database. 
+#####5. Use a query statement in the  TitanicAnalysis.R file (in data folder) to build one or more data frame (we did 4) with the titanic data from the Oracle     database to be built within the environment. 
 ##### 6. Edit each data frame to gather desired data.(With null, without null, age<10, etc.)
 #####7. Generate the require plots in the visualizations folder using ggplot function in a .R file
-#####8. Call these files in a .Rmd file using R markdown commands and press Knit HTML to view the data/plots. (Code seen below)
+#####8. Call these files in a .Rmd file using the R markdown command "source" and press Knit HTML to view the data/plots. (Code seen below)
 
 #### Folders Needed
 #####00 Doc: Holds the .Rmd and .html files containing these instructions and project output
 #####01 Data: Gathers the data from the database for and puts it into data frames
-#####02 Visualization: Contains the .R files that use ggplot2 to generate graph our graphs
+#####02 Visualization: Contains the .R files that use ggplot to generate graph our graphs
 
 
 #### R markdown code

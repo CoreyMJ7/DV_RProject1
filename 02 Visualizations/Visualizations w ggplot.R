@@ -1,3 +1,6 @@
+#Our unique graph is found at the bottom of this code with a description of it in the comments.
+
+
 require(extrafont)
 
 #Graph 1: Fare vs Age w/ null included
@@ -111,6 +114,7 @@ ggplot() +
 
 
 #Graph 6: Age vs Sex w/Embark and Survived - UNIQUE GROUP VISUALIZATION
+#Graphs the age vs sex of the passengers and separates this data by where the passenger embarked from and whether they survived
 ggplot() + 
   coord_cartesian() + 
   scale_x_discrete() +
@@ -118,7 +122,7 @@ ggplot() +
   #facet_wrap(~SURVIVED) +
   #facet_grid(.~SURVIVED, labeller=label_both) + # Same as facet_wrap but with a label.
   facet_grid(SURVIVED~EMBARKED, labeller=label_both) +
-  labs(title='Titanic where age >= 40: Age vs Sex By Embarked & Survival') +
+  labs(title='Titanic Age >= 40 vs Sex By Embarked Location & Survival') +
   labs(x="SEX", y=paste("AGE")) +
   layer(data=df4, 
         mapping=aes(x=SEX, y=as.numeric(as.character(AGE)), color=SEX), 
